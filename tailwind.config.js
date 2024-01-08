@@ -6,8 +6,8 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/**/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/globals.css",
-    "./app/tailwind.css",
+    "./app/*.{js,ts,jsx,tsx,mdx}",
+    "./app/*.css",
   ],
   theme: {
     extend: {
