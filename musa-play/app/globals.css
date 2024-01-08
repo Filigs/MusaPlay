@@ -1,0 +1,85 @@
+@import "tailwind.css";
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  color: #374957;
+  font-family: Darker Grotesque;
+  line-height: 100%;
+  font-style: normal;
+  @apply font-normal;
+}
+
+h1 {
+  /* H1 - DESTAQUE BOLD */
+
+  letter-spacing: -1.8px;
+
+  @apply text-6xl;
+}
+
+h2 {
+  /* H2 - HEAD BOLD */
+
+  letter-spacing: -1.2px;
+
+  @apply text-4xl;
+}
+
+h3 {
+  /* H3 - SUB-HEAD BOLD */
+
+  @apply text-3xl;
+}
+
+h4 {
+  /* H4 - TITULO BOLD */
+
+  @apply text-2xl;
+}
+
+h5 {
+  /* H5 - SUB-TITULO BOLD */
+
+  letter-spacing: -0.6px;
+  @apply text-xl leading-tight;
+}
+
+h6 {
+  /* H6 - PARAGRAFO BOLD */
+  letter-spacing: -0.54px;
+  @apply text-lg;
+}
+
+label {
+  letter-spacing: -0.42px;
+  @apply text-sm;
+}
