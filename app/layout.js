@@ -1,4 +1,5 @@
 import { Darker_Grotesque } from "next/font/google";
+import "./globals.css";
 const darker_grotesque = Darker_Grotesque({
   subsets: ["latin"],
   display: "swap",

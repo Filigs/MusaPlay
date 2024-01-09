@@ -1,0 +1,4 @@
+.container {
+  background-image: url("../public/images/bg-home.png");
+  @apply bg-cover;
+}

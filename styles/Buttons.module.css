@@ -1,0 +1,53 @@
+.base {
+  @apply inline-flex px-5 py-4 justify-center items-center gap-3 border-0;
+  @apply rounded-base text-white;
+}
+.primary {
+  @apply base;
+  @apply border border-solid border-white;
+}
+.colored {
+  @apply base;
+  background: var(
+    --Degrade-2,
+    linear-gradient(90deg, #a70bc4 0%, #fb16f7 142.11%)
+  );
+}
+
+.gmail {
+  @apply base;
+  @apply bg-primary-darker;
+}
+
+.facebook {
+  @apply base;
+  @apply bg-primary-dark-hover;
+}
+
+.apple {
+  @apply base;
+  @apply bg-primary;
+}
+
+.settings {
+  @apply flex justify-center items-center gap-2 flex-shrink-0;
+  @apply rounded-full border border-solid border-primary;
+  @apply bg-primary-dark-active;
+  width: 56px;
+  height: 56px;
+  padding: 1px 20px;
+}
+
+.settings:active {
+  @apply border-primary-dark;
+  @apply bg-primary-dark;
+  width: 56px;
+  height: 56px;
+  padding: 1px 20px;
+}
+
+.logo {
+  width: 118px;
+  height: 127px;
+  @apply flex-shrink-0;
+}
