@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./styles/*.{js,ts,jsx,tsx,mdx}",
-    "./styles/**/*.{js,ts,jsx,tsx,mdx}",
+    "./styles/*.{js,ts,jsx,tsx,mdx,css}",
+    "./styles/**/*.{js,ts,jsx,tsx,mdx,css}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/**/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/globals.css",
-    "./app/tailwind.css",
+    "./app/*.{js,ts,jsx,tsx,mdx}",
+    "./app/*.css",
   ],
   theme: {
     extend: {
@@ -15,6 +15,9 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      borderRadius: {
+        base: "4",
       },
       colors: {
         primary: {
