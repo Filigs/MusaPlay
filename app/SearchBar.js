@@ -1,5 +1,5 @@
 "use client";
 
 export default function SearchBar() {
-  return <>Hello</>;
+  return <>Search bar</>;
 }

@@ -2,3 +2,25 @@
   background-image: url("../public/images/bg-home.png");
   @apply bg-cover;
 }
+
+.content {
+  @apply inline-flex flex-col items-start my-auto;
+  gap: 33px;
+  height: 363px;
+}
+
+.headline {
+  @apply flex flex-shrink-0 items-center justify-center;
+  width: 451px;
+  height: 167px;
+  padding: 17.702px 0px 19.298px 0px;
+}
+
+.body {
+  @apply text-white text-3xl font-normal leading-8;
+  letter-spacing: -0.9px;
+}
+
+.nav {
+  @apply flex w-full p-5 justify-between items-center flex-shrink-0;
+}
