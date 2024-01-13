@@ -1,23 +1,24 @@
 .container {
-  @apply flex justify-end items-center flex-shrink-0;
+  @apply flex items-center flex-shrink-0 w-full gap-5 overflow-hidden cursor-grab active:cursor-grabbing;
+  /* Set a minimum width based on the number of cards and their size */
+  min-width: calc(50 * 160px); /* Adjust the 100px based on your card size */
 }
 
 .card {
   @apply flex flex-col justify-center items-center;
   @apply rounded-2xl bg-primary-dark-hover text-white;
-
   gap: 19px;
   padding: 24px 32px;
+  min-width: 160px; /* Adjust based on your desired card width */
 }
-
 .imageContainer {
   @apply w-24 h-24;
-  @apply fill-primary-DEFAULT-active;
+  @apply bg-primary-DEFAULT-active rounded-full justify-center;
 }
 
 .imageContainer > .image {
   @apply w-8 h-8;
-  @apply absolute left-8 top-8;
+  @apply relative top-8 left-8;
   @apply fill-white;
 }
 

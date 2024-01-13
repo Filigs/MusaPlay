@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         ></meta>
       </head>
       <body
-        className={`${darker_grotesque.className} min-h-screen mx-auto bg-primary-darker`}
+        className={`${darker_grotesque.className} min-h-screen mx-auto bg-primary-darker overflow-hidden`}
       >
         {/* Header */}
         <main className="w-full h-full bg-primary-darker">{children}</main>
