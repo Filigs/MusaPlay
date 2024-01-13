@@ -1,0 +1,26 @@
+.container {
+  @apply flex justify-end items-center flex-shrink-0;
+}
+
+.card {
+  @apply flex flex-col justify-center items-center;
+  @apply rounded-2xl bg-primary-dark-hover text-white;
+
+  gap: 19px;
+  padding: 24px 32px;
+}
+
+.imageContainer {
+  @apply w-24 h-24;
+  @apply fill-primary-DEFAULT-active;
+}
+
+.imageContainer > .image {
+  @apply w-8 h-8;
+  @apply absolute left-8 top-8;
+  @apply fill-white;
+}
+
+.text {
+  @apply text-white text-2xl font-bold leading-6;
+}
