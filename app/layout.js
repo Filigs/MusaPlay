@@ -24,10 +24,12 @@ export default function RootLayout({ children }) {
         ></meta>
       </head>
       <body
-        className={`${darker_grotesque.className} min-h-screen mx-auto bg-primary-darker overflow-hidden `}
+        className={`${darker_grotesque.className} min-h-screen mx-auto bg-primary-darker `}
       >
         <Header />
-        <main className="w-full h-full bg-primary-darker">{children}</main>
+        <main className="w-full h-full overflow-hidden bg-primary-darker">
+          {children}
+        </main>
         {/* Footer */}
       </body>
     </html>

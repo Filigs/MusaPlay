@@ -4,7 +4,7 @@
 }
 
 .homeContainer {
-  @apply inline-flex h-363 w-auto flex-col items-start py-52 gap-8 flex-shrink-0;
+  @apply inline-flex h-363 max-w-xl flex-col items-start py-52 gap-8 flex-shrink-0;
 }
 
 .searchBarContainer {
