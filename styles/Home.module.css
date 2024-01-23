@@ -1,6 +1,6 @@
 .container {
   background-image: url("../public/images/bg-home.png");
-  @apply bg-cover px-40 min-h-screen bg-primary-darker;
+  @apply bg-cover px-40 min-h-screen bg-primary-darker z-0;
 }
 
 .homeContainer {
