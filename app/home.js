@@ -1,5 +1,6 @@
 "use client";
 import styles from "../styles/Home.module.css";
+
 import Carousel from "./Carousel";
 import SearchBar from "./SearchBar";
 export default function Homepage() {

@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import arrowDown from "../public/images/icons/arrowDown.svg";
@@ -29,4 +30,3 @@ export default function SearchBar() {
       </div>
     </div>
   );
-}

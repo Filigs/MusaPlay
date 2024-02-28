@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
 import buttons from "../styles/Buttons.module.css";
@@ -17,4 +18,3 @@ export default function Header() {
       </div>
     </nav>
   );
-}

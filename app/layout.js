@@ -1,6 +1,8 @@
 import { Darker_Grotesque } from "next/font/google";
 import "./globals.css";
 import Header from "./Header";
+import Footer from "./Footer";
+
 const darker_grotesque = Darker_Grotesque({
   subsets: ["latin"],
   display: "swap",
@@ -31,6 +33,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         {/* Footer */}
+        <Footer />
       </body>
     </html>
   );

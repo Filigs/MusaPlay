@@ -1,4 +1,5 @@
 "use client";
+
 // app\Carousel.js
 import { useEffect, useState, useRef, useCallback } from "react";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
@@ -176,4 +177,3 @@ function CarouselItem({ src, fileName, key }) {
       <h4 className="capitalize">{fileName}</h4>
     </div>
   );
-}
