@@ -1,0 +1,7 @@
+.container {
+  @apply flex w-full h-32 p-5 justify-between items-center flex-shrink-0 px-40;
+}
+
+.buttonsContainer {
+  @apply flex items-center gap-3;
+}
