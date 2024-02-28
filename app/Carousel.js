@@ -177,3 +177,4 @@ function CarouselItem({ src, fileName, key }) {
       <h4 className="capitalize">{fileName}</h4>
     </div>
   );
+}
