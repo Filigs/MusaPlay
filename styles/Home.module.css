@@ -1,6 +1,35 @@
 .container {
   background-image: url("../public/images/bg-home.png");
-  @apply bg-cover;
+  @apply bg-cover px-40 min-h-screen bg-primary-darker z-0;
+}
+
+.homeContainer {
+  @apply inline-flex h-363 max-w-xl flex-col items-start py-52 gap-8 flex-shrink-0;
+}
+
+.searchBarContainer {
+  @apply flex h-16 px-5 py-4 items-center gap-5 flex-shrink-0;
+  @apply rounded-md border border-solid border-white;
+  background: rgba(177, 177, 177, 0.13);
+
+  backdrop-filter: blur(48.79999923706055px);
+}
+
+.searchBar {
+  @apply flex items-center gap-5;
+}
+
+h4.text {
+  @apply text-white text-2xl font-normal leading-8;
+  letter-spacing: -0.72px;
+}
+
+h4.textPlaceholder {
+  @apply opacity-30;
+}
+
+.waveFeatures {
+  background-image: url("../public/images/wave.png");
 }
 
 .content {

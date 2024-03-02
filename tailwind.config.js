@@ -19,6 +19,9 @@ module.exports = {
       borderRadius: {
         base: "4",
       },
+      spacing: {
+        363: "363px",
+      },
       colors: {
         primary: {
           light: {

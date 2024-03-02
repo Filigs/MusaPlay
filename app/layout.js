@@ -2,6 +2,7 @@ import { Darker_Grotesque } from "next/font/google";
 import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
+
 const darker_grotesque = Darker_Grotesque({
   subsets: ["latin"],
   display: "swap",
@@ -25,11 +26,12 @@ export default function RootLayout({ children }) {
         ></meta>
       </head>
       <body
-        className={`${darker_grotesque.className} min-h-screen mx-auto bg-primary-darker`}
+        className={`${darker_grotesque.className} min-h-screen mx-auto bg-primary-darker `}
       >
-        {/* Header */}
         <Header />
-        <main className="w-full h-full bg-primary-darker">{children}</main>
+        <main className="w-full h-full overflow-hidden bg-primary-darker">
+          {children}
+        </main>
         {/* Footer */}
         <Footer />
       </body>
