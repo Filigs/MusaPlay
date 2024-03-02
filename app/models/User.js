@@ -67,10 +67,10 @@ const userSchema = new mongoose.Schema(
 
     profile: {
       type: String,
-      enum: ['project', 'individual'],
+      enum: ['project', 'individual'], // Add 'project' as a valid profile for 'client'
       validate: {
         validator: function () {
-          return this.type === 'talent';
+          return this.type === 'talent' || this.type === 'client'; // Allow 'client' to set 'profile'
         },
         message: 'Client users cannot change profile',
       },
