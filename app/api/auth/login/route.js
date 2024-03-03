@@ -1,8 +1,8 @@
-// pages/api/auth/login/route.js
-import dbConnect from '../../dbConnect';
-import User from '@/app/models/User';
-import sendJWTTokenCookie from '../../utils/sendJWTTokenCookie';
-import { NextResponse } from 'next/server';
+// app/api/auth/login/route.js
+import dbConnect from "../../dbConnect";
+import User from "@/app/models/User";
+import sendJWTTokenCookie from "../../utils/sendJWTTokenCookie";
+import { NextResponse } from "next/server";
 
 export const POST = async (request) => {
   try {
@@ -19,19 +19,19 @@ export const POST = async (request) => {
       return new NextResponse(
         JSON.stringify({
           authenticated: false,
-          error: 'Provide an email and password',
+          error: "Provide an email and password",
         }),
         { status: 400 }
       );
     }
 
-    const user = await User.findOne({ email }).select('+password');
+    const user = await User.findOne({ email }).select("+password");
 
     if (!user || !(await user.checkPassword(password, user.password))) {
       return new NextResponse(
         JSON.stringify({
           authenticated: false,
-          error: 'Incorrect email or password',
+          error: "Incorrect email or password",
         }),
         { status: 401 }
       );
@@ -40,15 +40,15 @@ export const POST = async (request) => {
     //sendJWTTokenCookie(user, 200, res);
 
     // Return a success response
-    return new NextResponse(JSON.stringify({ status: 'success', user }), {
+    return new NextResponse(JSON.stringify({ status: "success", user }), {
       status: 200,
     });
   } catch (error) {
-    console.error('Error in API route:', error);
+    console.error("Error in API route:", error);
     return new NextResponse(
       JSON.stringify({
         authenticated: false,
-        error: 'An error occurred during login',
+        error: "An error occurred during login",
       }),
       { status: 500 }
     );
