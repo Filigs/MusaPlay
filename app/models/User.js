@@ -65,6 +65,33 @@ const userSchema = new mongoose.Schema(
       enum: ['client', 'talent'],
     },
 
+    projects: {
+      type: [
+        {
+          projectName: {
+            type: String,
+            required: [true, 'Please provide the project name'],
+          },
+          description: {
+            type: String,
+            required: [true, 'Please provide a description of the project'],
+          },
+          startDate: {
+            type: Date,
+          },
+          endDate: {
+            type: Date,
+          },
+        },
+      ],
+      validate: {
+        validator: function (v) {
+          return this.type === 'talent'; // Only talents can have projects
+        },
+        message: 'Only talents can have projects',
+      },
+    },
+
     profile: {
       type: String,
       enum: ['project', 'individual'], // Add 'project' as a valid profile for 'client'
