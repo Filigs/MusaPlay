@@ -273,7 +273,6 @@ userSchema.methods.updateAvailability = async function (date, isAvailable) {
     { $set: { 'availability.$.isAvailable': isAvailable } }
   );
 };
+const User = mongoose.models.User || mongoose.model('User', userSchema);
 
-const User = mongoose.model('User', userSchema);
-
-module.exports = User;
+export default User;
